@@ -19,7 +19,7 @@ export default function Navbar({
     links = [
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
-        { label: "Work", href: "/work" },
+        { label: "Work", href: "/portfolio" },
         { label: "Contact", href: "/contact" },
     ],
 }: {
@@ -57,18 +57,18 @@ export default function Navbar({
                 {/* Desktop links */}
                 <ul className="hidden md:flex items-center gap-6">
                     {links.map((l) => (
-<li key={l.href}>
-  <Link
-    href={l.href}
-    className="relative text-sm text-white/90 hover:text-white transition-colors 
+                        <li key={l.href}>
+                            <Link
+                                href={l.href}
+                                className="relative text-sm text-white/90 hover:text-purple-400 transition-colors 
                after:content-[''] after:absolute after:left-0 after:bottom-0 
-               after:w-full after:h-[1px] after:bg-white/90 after:scale-x-0
+               after:w-full after:h-[1px] after:bg-purple-700/90 after:scale-x-0
                after:origin-left after:transition-transform after:duration-300 
                hover:after:scale-x-100"
-  >
-    {l.label}
-  </Link>
-</li>
+                            >
+                                {l.label}
+                            </Link>
+                        </li>
 
                     ))}
                 </ul>
@@ -77,8 +77,8 @@ export default function Navbar({
                 <div className="flex items-center gap-3">
                     {/* CTA contoh, optional */}
                     <a
-                        href="/signup"
-                        className="hidden md:inline-block text-white text-sm px-3 py-1.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/6 hover:bg-white/12 transition"
+                        href="/portfolio"
+                        className="hidden md:inline-block text-white text-sm px-3 py-1.5 rounded-lg backdrop-blur-sm border border-white/6 transition"
                     >
                         Our Work
                     </a>
@@ -88,7 +88,7 @@ export default function Navbar({
                         aria-label={open ? "Close menu" : "Open menu"}
                         aria-expanded={open}
                         onClick={() => setOpen((s) => !s)}
-                        className="md:hidden p-2 rounded-lg bg-white/4 hover:bg-white/6 transition"
+                        className="md:hidden p-2 rounded-lg transition"
                     >
                         {/* Icon berubah: menu -> close */}
                         {open ? <HiX className="w-6 h-6 text-white" /> : <HiMenu className="w-6 h-6 text-white" />}
@@ -149,14 +149,3 @@ export default function Navbar({
         </header>
     );
 }
-
-/*
-Usage:
-1. Simpan file ini di `components/Navbar.tsx`.
-2. Pastikan Tailwind CSS sudah aktif di project Next.js kamu.
-3. Import dan pakai di layout: `import Navbar from "@/components/Navbar";` lalu <Navbar brand="Monarch" />
-
-Catatan:
-- Komponen ini pakai backdrop-blur dan semi-transparan (bg-white/6). Kamu bisa ganti warna/opacity sesuai tema.
-- Sudah pakai framer-motion untuk animasi halus. Jika belum punya, install: `npm i framer-motion react-icons`.
-*/

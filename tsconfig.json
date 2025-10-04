@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/rbits/Fuzzy.jsx", "src/app/components/rbits/ElectricBorder.jsx", "src/app/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/rbits/Fuzzy.jsx", "src/app/components/rbits/ElectricBorder.jsx", "src/app/page.tsx", "src/app/contact/page.jsx"],
   "exclude": ["node_modules"]
 }
