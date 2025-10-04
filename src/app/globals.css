@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+* {
+  font-family: Raleway;
+}
+
+/* Scrollbar */
+/* Scrollbar untuk browser berbasis WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;              /* lebar scrollbar */
+  height: 8px;             /* tinggi scrollbar (untuk horizontal) */
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;      /* warna background track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ba4bea;      /* warna biru (tailwind blue-500) */
+  border-radius: 9999px;    /* biar bulat */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ba4bea;      /* warna biru lebih gelap pas hover */
+}
+
+/* Scrollbar untuk Firefox */
+* {
+  scrollbar-width: thin;              /* tipis */
+  scrollbar-color: #ba4bea #0f172a;   /* thumb track */
+}
