@@ -135,11 +135,11 @@ export default function Navbar({
 
                             <div className="mt-6">
                                 <a
-                                    href="/signup"
+                                    href="/portfolio"
                                     className="block text-center text-sm px-4 py-2 rounded-lg bg-white/10 border border-white/6"
                                     onClick={() => setOpen(false)}
                                 >
-                                    Get started
+                                    Our Work
                                 </a>
                             </div>
                         </motion.div>

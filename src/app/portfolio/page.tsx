@@ -1,13 +1,13 @@
 "use client";
 
-import LightRay from '../components/rbits/LightRay';
+// import LightRay from '../components/rbits/LightRay';
 import { motion } from 'framer-motion';
 
 export default function PortfolioPage() {
   return (
-    <main className='bg-black w-full h-screen flex items-center justify-center overflow-hidden relative'>
+    <main className='w-full h-screen flex items-center justify-center overflow-hidden relative'>
       {/* LightRay Background */}
-      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+      {/* <div style={{ width: '100%', height: '600px', position: 'relative' }}>
         <LightRay
           raysOrigin="top-center"
           raysColor="#00ffff"
@@ -20,7 +20,7 @@ export default function PortfolioPage() {
           distortion={0.05}
           className="custom-rays"
         />
-      </div>
+      </div> */}
 
       {/* Teks besar di tengah */}
       <motion.h1

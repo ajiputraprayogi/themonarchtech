@@ -19,10 +19,10 @@ export default function AboutPage() {
           We Don’t Just Build Website,
           <span className="text-purple-400"> We Craft Experiences. </span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-300">
+        {/* <p className="text-lg md:text-xl text-gray-300">
          Started from a small idea, we grew into a team of passionate builders, designers, and dreamers.
          <span className="text-purple-400"> Our goal is simple, </span>To create technology that feels alive, personal, and human.
-        </p>
+        </p> */}
       </motion.div>
     </div>
       </>
